@@ -1,0 +1,431 @@
+.App {
+  height: 100vh;
+  overflow: scroll;
+  text-align: center;
+}
+
+
+h1 { 
+  margin-top:40px;
+  color: #ff8177; font-family: 'Helvetica Neue', 
+  sans-serif; text-shadow: 0.5px 0.5px 0.5px #000000;
+  font-size: 50px; font-weight: bold; 
+  letter-spacing: -1px; line-height: 1; 
+  text-align: center; }
+
+  h2 { color: #ff8177; font-family: 'Open Sans', sans-serif; 
+    text-shadow: 0.5px 0.5px 0.5px #000000;
+    font-size: 30px; font-weight: 300; line-height: 32px;
+     margin: 0 0 72px; text-align: center; }
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.centerVideo {
+  
+  position: relative;
+  padding-top: 10%;  
+  padding-left: 20%;  
+  height: 0;
+}
+
+.normal
+{
+  display:block;
+}
+
+.hidden
+{
+  display:none;
+}
+
+.buttonReturnGame {
+  border-radius: 4px;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  border: none;
+  color: #ffffff;
+  font-size: 8x;
+  padding: 5px;
+  width: 120px;
+  cursor: pointer;
+  margin-left: 80%;
+  margin-bottom: 2%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content:center;
+  padding-top: 30px;
+}
+
+.header {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.sub-text {
+  font-size: 25px;
+  color: white;
+}
+
+.content-container {
+  background-color: #a200d6;
+}
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.connect-wallet-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 550px;
+}
+
+.connect-wallet-container img {
+  padding-bottom: 20px;
+}
+
+.connect-wallet-button {
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ====  Loading Indicator ==== */
+
+/* Code found on https://loading.io/css/ */
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 170px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ====  STAKING ==== */
+
+.AppStaking {
+  background-color: #fff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.appBody {
+  height: 100%;
+  margin-top: 80px;
+}
+
+/* Market */
+.marketContainer {
+  background-color: #1167f1;
+  width: 620px;
+  height: 170px;
+  margin:  170px auto;
+  top: 50%;
+  border-radius: 24px;
+  padding: 8px
+}
+
+.centerMarketContainer {
+  text-align:center;
+  position: relative;
+  margin-left:  250px;
+  margin-top:  10px;
+  background-color: #FFDEAD;
+  width: 620px;
+  border-radius: 24px;
+  padding: 8px;
+}
+.subContainer {
+  margin-bottom: 20px;
+  text-align:center;
+}
+.marketOption {
+  display: flex;
+  margin-left: 22px;
+}
+.optionData {
+  text-align: left;
+  color: #6495ED;
+	text-shadow: 0.5px 0.5px 0.5px #000000;
+  font-weight: 700;
+}
+.optionMore {
+  text-align: left;
+  color: #6495ED;
+	text-shadow: 0.5px 0.5px 0.5px #000000;
+  font-weight: 100;
+}
+.optionPercent {
+  display: block;
+  font-size: 24px;
+  font-weight: 1000;
+  color: #6495ED;
+  text-shadow: 0.5px 0.5px 0.5px #000000;
+}
+.logoImg {
+  background-color: #fff;
+  border-radius: 100px;
+  margin-bottom: 14px;
+  margin-right: 14px;
+  width: 28px;
+  height: 28px;
+}
+.marketHeader {
+  color: #6495ED;
+  text-shadow: 0.5px 0.5px 0.5px #000000;
+  font-size: 32px;
+  font-weight: 800;
+  text-align:center;
+}
+.hoverButton:hover {
+  background: #f90;
+  cursor: pointer;
+}
+.hoverButton:active {
+  box-shadow: inset;
+  background: #f90;
+}
+
+/* Assets */
+.assetContainer {
+  background-color: #FFDEAD;
+  width: 620px;
+  min-height: 225px;
+  margin-left: 250px;
+  top: 50%;
+  border-radius: 24px;
+  padding: 6px;
+  padding: 8px;
+  margin-top: 20px;
+  color: #6495ED;
+  text-shadow: 0.5px 0.5px 0.5px #000000;
+  font-weight: 500;
+}
+.columnHeaders {
+  font-weight: 800;
+  color: #6495ED;
+  text-shadow: 0.5px 0.5px 0.5px #000000;
+}
+
+.stakedLogoImg {
+  background-color: #fff;
+  border-radius: 100px;
+  margin-bottom: 14px;
+  margin-right: 14px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Glyphs */
+.glyphContainer {
+  background-color: #fff;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+}
+.glyph {
+  font-size: 34px;
+}
+
+/* Stake Modal */
+.modal-class {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  left: 0;
+  top: -400px;
+  right: 0px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(86, 90, 105);
+}
+.modal-content {
+  background-color: #fff;
+  width: 300px !important;
+  padding: 0px 15px;
+  background-color: rgb(237, 238, 242) !important;
+  border: 1px solid rgb(206, 208, 217) !important;
+  border-radius: 12px !important;
+}
+.fieldContainer {
+  padding-left: 0px !important;
+}
+.inputField {
+  padding-left: 10px;
+  border-radius: 36px;
+  border: 1px solid #65cdee;
+  height: 2rem;
+  margin: 10px 0;
+  width: 100%;
+}
+.inputFieldUnitsContainer {
+  padding-left: 0px !important;
+  padding-top: 14px;
+}
+.orangeButton {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #dd2f81;
+  cursor: pointer
+}
+.stakeButton {
+  text-align:center;
+  width: 100%;
+  height:  30px;
+  line-height: 30px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #6495ED;
+  cursor: pointer
+}
+.stakeButton:hover {
+  color: #fff;
+  background-color: #f90;
+}
+.orangeMiniButton {
+  text-align:center;
+  width: 100%;
+  height:  25px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #6495ED;
+  cursor: pointer
+}
+.orangeMiniButton:hover {
+  color: #fff;
+  background-color: #f90;
+}
+.stakingTerms{
+  color: blue;
+}
+
+
+
+
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

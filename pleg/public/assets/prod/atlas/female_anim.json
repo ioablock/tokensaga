@@ -1,0 +1,56 @@
+{
+    "anims": [
+        {
+            "key": "attack",
+            "type": "frames",
+            "repeat": 5,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "female",
+                    "frame": "attack__000"
+                },
+                {
+                    "key": "female",
+                    "frame": "attack__004"
+                },
+                {
+                    "key": "female",
+                    "frame": "attack__005"
+                }
+            ]
+        },
+        {
+            "key": "run",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "female",
+                    "frame": "run__000"
+                },
+                {
+                    "key": "female",
+                    "frame": "run__001"
+                }
+            ]
+        },
+        {
+            "key": "idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "female",
+                    "frame": "idle__001"
+                },
+                {
+                    "key": "female",
+                    "frame": "idle__002"
+                }
+            ]
+        }
+    ]
+}
